@@ -9,7 +9,7 @@ app = FastAPI()
 class RayExampleApp:
     @app.get("/healthz")
     async def healthz(self) -> dict[str, str]:
-        return {"status": "ok"}
+        return {"status": "success"}
 
     @app.get("/helloworld")
     async def helloworld(self) -> dict[str, str]:
